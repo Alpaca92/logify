@@ -53,12 +53,11 @@ interface FolderCardProps {
 function FolderCard({ id, name, count }: FolderCardProps) {
   return (
     <Link
-      className="p-10 border border-[#EBEBEAFF] rounded-md cursor-pointer"
-      href={`/folders/${id}`}
-    >
+      className='p-10 border border-[#EBEBEAFF] rounded-md cursor-pointer'
+      href={`/folders/${id}`}>
       {/* TODO: name 옆에 pinned icon 넣기 */}
-      <h3 className="text-lg font-semibold">{name}</h3>
-      <p className="mt-[0.375rem] text-[#8C8D8BFF]">{`Contains ${count} URLs`}</p>
+      <h3 className='text-lg font-semibold'>{name}</h3>
+      <p className='mt-[0.375rem] text-[#8C8D8BFF]'>{`Contains ${count} URLs`}</p>
     </Link>
   );
 }
@@ -66,11 +65,11 @@ function FolderCard({ id, name, count }: FolderCardProps) {
 export default function Folders() {
   return (
     <div>
-      <h1 className="font-bold text-2xl">Manage Your Folders</h1>
+      <h1 className='font-bold text-2xl'>Manage Your Folders</h1>
       {/* NOTE: Quick Access */}
-      <div className="mt-9">
-        <h2 className="font-semibold text-xl">Quick Access</h2>
-        <div className="mt-[3.25rem] grid grid-cols-3 gap-4">
+      <div className='mt-9'>
+        <h2 className='font-semibold text-xl'>Quick Access</h2>
+        <div className='mt-[3.25rem] grid grid-cols-3 gap-4'>
           {MOCK_DATA.map(({ id, name, count }) => (
             <FolderCard
               key={id}
@@ -83,7 +82,7 @@ export default function Folders() {
       </div>
       {/* NOTE: All Folders */}
       <div>
-        <h2 className="font-semibold text-xl">All Folders</h2>
+        <h2 className='font-semibold text-xl'>All Folders</h2>
         <Table
           data={TABLE_MOCK_DATA}
           columns={TABLE_MOCK_COLUMNS}
