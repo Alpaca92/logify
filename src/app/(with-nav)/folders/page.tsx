@@ -10,17 +10,17 @@ const MOCK_DATA = [
 ];
 
 interface TableMock {
-  id: number;
+  id: string;
   name: string;
   email: string;
 }
 
 const TABLE_MOCK_DATA: TableMock[] = [
-  { id: 0, name: 'anonymous0', email: 'anonymous0@gmail.com' },
-  { id: 1, name: 'anonymous1', email: 'anonymous1@gmail.com' },
-  { id: 2, name: 'anonymous2', email: 'anonymous2@gmail.com' },
-  { id: 3, name: 'anonymous3', email: 'anonymous3@gmail.com' },
-  { id: 4, name: 'anonymous4', email: 'anonymous4@gmail.com' },
+  { id: '0', name: 'anonymous0', email: 'anonymous0@gmail.com' },
+  { id: '1', name: 'anonymous1', email: 'anonymous1@gmail.com' },
+  { id: '2', name: 'anonymous2', email: 'anonymous2@gmail.com' },
+  { id: '3', name: 'anonymous3', email: 'anonymous3@gmail.com' },
+  { id: '4', name: 'anonymous4', email: 'anonymous4@gmail.com' },
 ];
 
 const columnHelper = createColumnHelper<TableMock>();
